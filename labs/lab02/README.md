@@ -2,7 +2,7 @@
 Creating a star map in modero_lab02_starmap.py
 
 In creating a starmap: <br/>
-  <pre> </pre>create an all black image <br/>
+  <pre>    </pre>create an all black image <br/>
   load the star_data_lots.csv file which contains the locations of stars in space <br/>
   linearly scale the brightness intensities <br/>
   calculate the latitude from the declination angles <br/>
