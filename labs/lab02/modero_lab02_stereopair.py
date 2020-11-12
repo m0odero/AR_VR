@@ -9,9 +9,10 @@ from scipy import signal
 # provide three arguments: the name of the left_image.jpg, 
 # right_image.jpg, and the name of the padded_image.jpg
 if ( len( sys.argv ) != 4 ):
-    print( "usage is: %s image_in image_out" % (sys.argv[0]) )
-    print( "        image_in is the distorted image" )
-    print( "        image_out is the processed image" )
+    print( "usage is: %s left_image.jpg right_image.jpg padded_image.jpg" % (sys.argv[0]) )
+    print( "        left_image.jpg is the left image" )
+    print( "        right_image.jpg is the right image" )
+    print( "        padded_image is the processed image" )
     sys.exit()
     
 # load the left and right image
