@@ -1,7 +1,7 @@
 # AR_VR
 Creating a star map in modero_lab02_starmap.py
 
-In creating a starmap:
+In creating a starmap: &nbsp;
   create an all black image
   load the star_data_lots.csv file which contains the locations of stars in space
   linearly scale the brightness intensities
