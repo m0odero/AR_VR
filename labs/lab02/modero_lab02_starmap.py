@@ -31,7 +31,7 @@ for i in range ( len(stars) ):
     # linearly scaling the intensities
     x   = stars["mag"].iloc[i]
     y   = m_int*x + c_int
-    intensities.append(int(round(y)))
+    intensities.append( int( round(y) ) )
     
     # converting ra column to longitude
     lng = 360 - ( stars["ra"].iloc[i] * 15 )
@@ -54,7 +54,7 @@ black_img = Image.fromarray( black_img_array )
 pixels = black_img.load()
 
 # inserting the stars into the black image
-for i in range( len(stars) ):
+for i in range ( len(stars) ):
     col = stars["longitudes"].iloc[i] * ( 4096/360 )
     row = stars["latitudes"].iloc[i] * ( 2048/180 ) + 1024
     
@@ -66,11 +66,11 @@ black_img_array = np.asarray( black_img, np.float32 )
 # convolution to spread out the intensities into neighboring pixels
 convK = np.asarray( [(0.0, 0.5, 0.0), (0.5, 1.0, 0.5), (0.0, 0.5, 0.0)], np.float )
     
-for i in range(len(black_img_array)):
-    black_img_array[i] =  signal.convolve2d(black_img_array[i], convK, 'same', 'fill', fillvalue=0)
+for i in range ( len(black_img_array) ):
+    black_img_array[i] =  signal.convolve2d( black_img_array[i], convK, 'same', 'fill', fillvalue=0 )
 
 black_img_array = black_img_array.astype( np.uint8 )
 black_img       = Image.fromarray( black_img_array )
 
-black_img.save(sys.argv[1] )
+black_img.save( sys.argv[1] )
 black_img.show()
