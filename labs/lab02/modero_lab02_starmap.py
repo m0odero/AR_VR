@@ -6,11 +6,9 @@ import pandas as pd
 from PIL import Image
 from scipy import signal
 
-# provide two arguments: the name of the distorted_image.jpg
-# and the name of the processed_image.jpg
+# provide one argument: the name of the star_image.jpg
 if ( len( sys.argv ) != 2 ):
-    print( "usage is: %s image_in image_out" % (sys.argv[0]) )
-    print( "        image_in is the distorted image" )
+    print( "usage is: %s star_image_out " % (sys.argv[0]) )
     print( "        image_out is the processed image" )
     sys.exit()
     
