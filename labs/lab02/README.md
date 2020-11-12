@@ -19,3 +19,4 @@ To pad the images on the black image:
   determine the pixel positions on the black image where the upper left corners of the left and right iages will be mapped
   paste the two images onto the black image
   
+
