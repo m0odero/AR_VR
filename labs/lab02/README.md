@@ -2,13 +2,15 @@
 Creating a star map in modero_lab02_starmap.py
 
 In creating a starmap: <br/>
-  &nbsp;create an all black image <br/>
-  load the star_data_lots.csv file which contains the locations of stars in space <br/>
-  linearly scale the brightness intensities <br/>
-  calculate the latitude from the declination angles <br/>
-  claculate the longitude from the right ascension <br/>
-  compute the PICS coordinates (row and column) from the latitude and longitude values <br/>
-  at the PICS coordinate of the row, col pair, change the pixel intensity to the corresponding intensity <br/>
+<ul>
+  <li>create an all black image </li><br/>
+  <li>load the star_data_lots.csv file which contains the locations of stars in space</li> <br/>
+  <li>linearly scale the brightness intensities</li> <br/>
+  <li>calculate the latitude from the declination angles</li> <br/>
+  <li>claculate the longitude from the right ascension </li><br/>
+  <li>compute the PICS coordinates (row and column) from the latitude and longitude values </li><br/>
+  <li>at the PICS coordinate of the row, col pair, change the pixel intensity to the corresponding intensity</li> <br/>
+</ul>
   <br/>
   <br/>
   
