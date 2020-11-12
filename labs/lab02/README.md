@@ -14,6 +14,7 @@ In creating a starmap: <br/>
   <br/>
   
 Padding a stereopair onto a black image in modero_lab02_stereopair.py <br/>
+
 To pad the images on the black image: <br/>
 <ul>
   <li>load the left and right images </li><br/>
