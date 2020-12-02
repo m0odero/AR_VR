@@ -5,14 +5,14 @@ import numpy as np
 from PIL import Image
 
 if len( sys.argv ) != 4:
-    print( "usage is: %s image_in image_out" % (sys.argv[0]) )
+    print( "usage is: %s image_in resized_im image_out" % (sys.argv[0]) )
     print( "        smaller values make detection more sensitive" )
     sys.exit()
     
 # load the image
 im          = Image.open( sys.argv[1] )
 
-# determining the dimesnions of the image
+# determining the dimensions of the image
 test_arr = np.asarray( im, np.float)
 shape    = test_arr.shape
 print(test_arr.shape)
